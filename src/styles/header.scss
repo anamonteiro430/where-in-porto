@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  height: auto;
+  background-color: #010a3b;
+  background-image: linear-gradient(#020c40, #020c40, #010a3b);
+  font-size: 20px;
+  padding: 0;
+}
+
+.logo {
+  margin-left: 5vh;
+
+  .logo-link {
+    text-decoration: none;
+
+    h3 {
+      color: white;
+      font-family: "Righteous";
+      font-size: 2em;
+      font-weight: normal;
+      padding: 0;
+      margin: 15px;
+
+      text-decoration: none;
+    }
+  }
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 5vw;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Slab";
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 25px;
+}
+
+.menu-links a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.1s ease 0s, left 0.1s ease 0s;
+}
+
+.menu-links a:hover:after {
+  width: 100%;
+  left: 0;
+}

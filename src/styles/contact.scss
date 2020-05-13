@@ -1,0 +1,58 @@
+#contact-title {
+  margin: 0;
+}
+
+#contact-subtitle {
+  margin: 0;
+  color: rgb(46, 44, 44);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 6vh;
+  justify-content: center;
+
+  #contact-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input {
+    margin-bottom: 20px;
+    height: 20px;
+    border-radius: 3px;
+    width: 47%;
+    border: none;
+  }
+
+  .subject {
+    width: 100%;
+    border: none;
+  }
+
+  textarea {
+    margin-bottom: 20px;
+    height: 170px;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+  }
+
+  button {
+    border-radius: 4px;
+    font-family: "Roboto Slab", serif;
+    background-color: #010a3b;
+    width: 25%;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    cursor: pointer;
+    float: right;
+  }
+}

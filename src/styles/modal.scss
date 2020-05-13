@@ -1,0 +1,239 @@
+.modall {
+  z-index: 8888;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto Slab";
+  margin: 3vh auto;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  padding-bottom: 15px;
+
+  .close {
+    color: #aaa;
+    width: 100%;
+    font-size: 0.8em;
+
+    button {
+      float: right;
+      background-color: white;
+      border: none;
+      color: grey;
+      margin-right: 5px;
+      cursor: pointer;
+      font-size: 1.5em;
+      font-family: "Open Sans";
+      font-weight: bolder;
+    }
+
+    button:hover {
+      color: #6a6969;
+    }
+
+    button:focus {
+      color: #6a6969;
+    }
+  }
+
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0vh;
+    width: 96%;
+
+    .modal_image {
+      margin-bottom: 0vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      #image {
+        object-fit: cover;
+        width: 92%;
+      }
+    }
+  }
+}
+
+#buttons {
+  padding: 0;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 92%;
+
+  .map {
+    background-color: #020f2a;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #map {
+        margin-top: 5px;
+        width: 40px;
+      }
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+
+  .facebook {
+    width: 33.3%;
+    background-color: #0469e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      #facebook {
+        margin-top: 5px;
+        width: 8%;
+      }
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+
+  .website {
+    background-color: #010a3b;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+
+  .booking {
+    background-color: #003580;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      img {
+        width: 32px;
+      }
+    }
+  }
+  .reserve {
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+
+  .stars {
+    background-color: #020f2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34.3%;
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.modal-info {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  color: #343434;
+
+  .modal-info-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .modal-info-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    .type {
+      text-align: center;
+      font-weight: 100;
+      margin-bottom: 0;
+    }
+  }
+  .title {
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 0;
+    color: #020f2a;
+  }
+
+  .price {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Righteous";
+    padding: 0px;
+    margin-bottom: 0;
+  }
+
+  .info {
+    text-align: center;
+    color: #6a6969;
+    margin-top: 10px;
+  }
+}
+
+p {
+  padding: 0;
+  margin: 0;
+
+  &:last-child {
+    margin-bottom: 14px;
+  }
+}
