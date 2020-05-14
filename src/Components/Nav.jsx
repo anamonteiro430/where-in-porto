@@ -19,7 +19,7 @@ export const Nav = () => {
           <Link to={`/nightlife`}>Nightlife</Link>
           <Link to={`/activities`}>Activities</Link>
           <Link to={`/stores`}>Stores</Link>
-          <Link to={`/contactus`}>Contact us</Link>
+          <Link to={`/contactus`}>Contact</Link>
         </div>
       </nav>
       <div className="second-nav">s</div>
