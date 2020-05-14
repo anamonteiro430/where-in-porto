@@ -12,7 +12,7 @@ export const Activities = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/api/activities/")
+      .get("https://wip-api.herokuapp.com/api/activities/")
       .then((res) => {
         setActivities(res.data);
         setFiltered(res.data);

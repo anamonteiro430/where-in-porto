@@ -16,7 +16,7 @@ export const Contact = () => {
     console.log("posting", message);
     setLoading(true);
     axios
-      .post("http://localhost:5000/api/contact/", message)
+      .post("https://wip-api.herokuapp.com/api/contact/", message)
       .then((res) => {
         setLoading(false);
       })

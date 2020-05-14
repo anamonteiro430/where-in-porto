@@ -12,7 +12,7 @@ export const Food = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/api/food/")
+      .get("https://wip-api.herokuapp.com/api/food/")
       .then((res) => {
         setFood(res.data);
         setFiltered(res.data);

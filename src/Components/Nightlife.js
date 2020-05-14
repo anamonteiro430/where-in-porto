@@ -13,7 +13,7 @@ export const Nightlife = () => {
     setLoading(true);
 
     axios
-      .get("http://localhost:5000/api/nightlife/")
+      .get("https://wip-api.herokuapp.com/api/nightlife/")
       .then((res) => {
         setNightlife(res.data);
         setFiltered(res.data);

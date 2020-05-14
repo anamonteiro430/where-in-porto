@@ -13,7 +13,7 @@ export const Stores = () => {
     setLoading(true);
 
     axios
-      .get("http://localhost:5000/api/stores/")
+      .get("https://wip-api.herokuapp.com/api/stores/")
       .then((res) => {
         setStores(res.data);
         setFiltered(res.data);
