@@ -9,7 +9,7 @@ export const Nav = () => {
         <div className="logo">
           <Link to={`/`} className="logo-link">
             {/* <img src={logo} width='250' className='logo' alt='logo' /> */}
-            <h3>whereinPorto</h3>
+            <img src={logo} width="250" />
           </Link>
         </div>
         <div className="menu-links">
