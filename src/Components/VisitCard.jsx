@@ -76,28 +76,28 @@ export const VisitCard = ({ card }) => {
 
           <div id="buttons">
             {card.website.includes("facebook") ? (
-              <div className="facebook">
+              <div className="facebook" style={{ width: "50%" }}>
                 <a
                   href={card.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={facebook} id="facebook" alt="facebook" />
+                  <img src={facebook} width="2" id="facebook" alt="facebook" />
                 </a>
               </div>
-            ) : card.website.includes("www") ? (
-              <div className="facebook">
+            ) : (
+              <div className="facebook" style={{ width: "50%" }}>
                 <a
-                  href={card.facebook}
+                  href={card.website}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Website
                 </a>
               </div>
-            ) : null}
+            )}
 
-            <div className="map">
+            <div className="map" style={{ width: "50%" }}>
               <a href={card.map} target="_blank" rel="noopener noreferrer">
                 <img src={map} id="map" alt="map" />
               </a>

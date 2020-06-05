@@ -13,7 +13,7 @@ export const Home = () => {
   useEffect(() => {
     console.log("running once?");
     axios
-      .get("https://wip-api.herokuapp.com/api/random/")
+      .get("https://wip-api.herokuapp.com//api/random/")
       .then((res) => {
         setRandomData(res.data);
       })

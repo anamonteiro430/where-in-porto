@@ -79,7 +79,7 @@ export const NightlifeCard = ({ card }) => {
 
           <div id="buttons">
             {card.website.includes("facebook") ? (
-              <div className="facebook">
+              <div className="facebook" style={{ width: "50%" }}>
                 <a
                   href={card.website}
                   target="_blank"
@@ -89,7 +89,7 @@ export const NightlifeCard = ({ card }) => {
                 </a>
               </div>
             ) : (
-              <div className="facebook">
+              <div className="facebook" style={{ width: "50%" }}>
                 <a
                   href={card.website}
                   target="_blank"
@@ -100,7 +100,7 @@ export const NightlifeCard = ({ card }) => {
               </div>
             )}
 
-            <div className="map">
+            <div className="map" style={{ width: "50%" }}>
               <a href={card.map} target="_blank" rel="noopener noreferrer">
                 <img src={map} id="map" alt="map" />
               </a>

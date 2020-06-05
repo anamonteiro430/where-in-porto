@@ -4,7 +4,7 @@ import map from "./../images/map.svg";
 export const Random = (props) => {
   console.log("Props", props);
   if (!props.one) {
-    return <p>aaa</p>;
+    return <p className="refresh">Refresh page for more tips!</p>;
   } else {
     return (
       <div id="random-content">

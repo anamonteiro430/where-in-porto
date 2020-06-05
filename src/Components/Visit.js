@@ -13,7 +13,7 @@ export const Visit = () => {
     setLoading(true);
 
     axios
-      .get("https://wip-api.herokuapp.com/api/visit/")
+      .get("https://wip-api.herokuapp.com//api/visit/")
       .then((res) => {
         setVisit(res.data);
         setFiltered(res.data);
@@ -25,7 +25,7 @@ export const Visit = () => {
   const filter = (c) => {
     console.log("filtering", c);
     setFiltered(visit);
-    let filtering = visit.filter((f) => f.tag === c);
+    let filtering = visit.filter((f) => f.type === c);
     setFiltered(filtering);
   };
 

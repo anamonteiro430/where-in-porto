@@ -8,12 +8,13 @@ export const Stores = () => {
   const [stores, setStores] = useState();
   const [filtered, setFiltered] = useState();
   const [loading, setLoading] = useState(false);
+  const [selected, setSelected] = useState();
 
   useEffect(() => {
     setLoading(true);
 
     axios
-      .get("https://wip-api.herokuapp.com/api/stores/")
+      .get("https://wip-api.herokuapp.com//api/stores/")
       .then((res) => {
         setStores(res.data);
         setFiltered(res.data);
@@ -23,8 +24,9 @@ export const Stores = () => {
   }, []);
 
   const filter = (c) => {
+    setSelected(c);
     setFiltered(stores);
-    let filtering = stores.filter((f) => f.tag === c);
+    let filtering = stores.filter((f) => f.type === c);
     setFiltered(filtering);
   };
 
@@ -78,9 +80,15 @@ export const Stores = () => {
           {loading ? <Loading /> : null}
 
           <div id="cards">
-            {filtered.map((f) => {
-              return <StoreCard className="card" key={f.id} card={f} />;
-            })}
+            {filtered.length === 0 ? (
+              <p className="NA">
+                No {selected} available at this time. Try later!
+              </p>
+            ) : (
+              filtered.map((f) => {
+                return <StoreCard className="card" key={f.id} card={f} />;
+              })
+            )}
           </div>
         </main>
       </div>

@@ -13,7 +13,7 @@ export const Stay = () => {
     setLoading(true);
 
     axios
-      .get("https://wip-api.herokuapp.com/api/stay/")
+      .get("https://wip-api.herokuapp.com//api/stay/")
       .then((res) => {
         setStay(res.data);
         setFiltered(res.data);

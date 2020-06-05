@@ -108,7 +108,7 @@
       align-items: center;
       #facebook {
         margin-top: 5px;
-        width: 8%;
+        width: 4%;
       }
     }
 
@@ -236,4 +236,10 @@ p {
   &:last-child {
     margin-bottom: 14px;
   }
+}
+
+.refresh {
+  color: white;
+  font-family: "Roboto Slab";
+  font-size: 20px;
 }

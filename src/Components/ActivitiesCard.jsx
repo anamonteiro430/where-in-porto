@@ -76,7 +76,7 @@ export const ActivitiesCard = ({ card }) => {
 
           <div id="buttons">
             {card.website.includes("facebook") ? (
-              <div className="facebook">
+              <div className="facebook" style={{ width: "50%" }}>
                 <a
                   href={card.website}
                   target="_blank"
@@ -86,9 +86,9 @@ export const ActivitiesCard = ({ card }) => {
                 </a>
               </div>
             ) : (
-              <div className="facebook">
+              <div className="facebook" style={{ width: "50%" }}>
                 <a
-                  href={card.facebook}
+                  href={card.website}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -97,9 +97,9 @@ export const ActivitiesCard = ({ card }) => {
               </div>
             )}
 
-            <div className="map">
-              <a href="https://www.w3schools.com">
-                <img src={map} id="map" alt="map-icon" />
+            <div className="map" style={{ width: "50%" }}>
+              <a href={card.map} target="_blank" rel="noopener noreferrer">
+                <img src={map} id="map" alt="map" />
               </a>
             </div>
           </div>

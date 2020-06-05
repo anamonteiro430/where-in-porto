@@ -8,11 +8,12 @@ export const Activities = () => {
   const [activities, setActivities] = useState();
   const [filtered, setFiltered] = useState();
   const [loading, setLoading] = useState(false);
+  const [selected, setSelected] = useState();
 
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://wip-api.herokuapp.com/api/activities/")
+      .get("https://wip-api.herokuapp.com//api/activities/")
       .then((res) => {
         setActivities(res.data);
         setFiltered(res.data);
@@ -22,8 +23,9 @@ export const Activities = () => {
   }, []);
 
   const filter = (c) => {
+    setSelected(c);
     setFiltered(activities);
-    let filtering = activities.filter((f) => f.tag === c);
+    let filtering = activities.filter((f) => f.type === c);
     setFiltered(filtering);
   };
 
@@ -88,10 +90,17 @@ export const Activities = () => {
             </button>
           </div>
           {loading ? <Loading /> : null}
+
           <div id="cards">
-            {filtered.map((f) => {
-              return <ActivitiesCard className="card" key={f.id} card={f} />;
-            })}
+            {filtered.length === 0 ? (
+              <p className="NA">
+                No {selected} available at this time. Try later!
+              </p>
+            ) : (
+              filtered.map((f) => {
+                return <ActivitiesCard className="card" key={f.id} card={f} />;
+              })
+            )}
           </div>
         </main>
       </div>

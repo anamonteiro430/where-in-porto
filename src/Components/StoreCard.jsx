@@ -75,7 +75,7 @@ export const StoreCard = ({ card }) => {
           )}
 
           <div id="buttons">
-            <div className="website">
+            <div className="website" style={{ width: "50%" }}>
               <a
                 href={`//${card.website}`}
                 target="_blank"
@@ -86,8 +86,8 @@ export const StoreCard = ({ card }) => {
             </div>
 
             <div className="map" style={{ width: "50%" }}>
-              <a href="https://www.w3schools.com">
-                <img src={map} id="map" alt="store" />
+              <a href={card.map} target="_blank" rel="noopener noreferrer">
+                <img src={map} id="map" alt="map" />
               </a>
             </div>
           </div>
